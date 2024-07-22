@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-workspace name="saltos-school" soapui-version="5.7.2" xmlns:con="http://eviware.com/soapui/config">
+<con:soapui-workspace name="saltos-school" soapui-version="5.7.2" cid="0e607797-e2a0-4e2c-aba6-f665d80507d8" xmlns:con="http://eviware.com/soapui/config">
   <con:settings/>
+  <con:recentItemCollection>
+    <con:moduleId>SoapUiNGModule</con:moduleId>
+    <con:itemId>8b4877da-9c17-4d74-baf9-2881747b6a79</con:itemId>
+    <con:itemId>fae107bc-af20-46d6-977a-9ac1cff067be</con:itemId>
+    <con:itemId>131c5358-ff43-484a-a0d1-950fa12645dc</con:itemId>
+    <con:itemId>2a6dfe00-ebf7-44f2-8b96-64c69a5b5ed4</con:itemId>
+    <con:itemId>1b296f35-967d-4aa9-bfd0-91b8b0544495</con:itemId>
+  </con:recentItemCollection>
+  <con:expandedTreeNodes/>
+  <con:overridenPropertyValuesCollection/>
+  <con:project name="REST Project 1">/home/csaltos/soapui/REST-Hola-REST-USERS-soapui-project.xml</con:project>
+  <con:project name="REST Project 2">/home/csaltos/soapui/REST-Hola-REST-USER-soapui-project.xml</con:project>
+  <con:collectInfoForSupport>false</con:collectInfoForSupport>
 </con:soapui-workspace>
