@@ -11,7 +11,6 @@
   </con:recentItemCollection>
   <con:expandedTreeNodes/>
   <con:overridenPropertyValuesCollection/>
-  <con:project name="REST Project 1">/home/csaltos/soapui/REST-Hola-REST-USERS-soapui-project.xml</con:project>
-  <con:project name="REST Project 2">/home/csaltos/soapui/REST-Hola-REST-USER-soapui-project.xml</con:project>
+  <con:project name="REST Hola USERS">/home/csaltos/soapui/REST-Hola-REST-USERS-soapui-project.xml</con:project>
   <con:collectInfoForSupport>false</con:collectInfoForSupport>
 </con:soapui-workspace>
