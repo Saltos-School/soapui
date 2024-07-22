@@ -12,5 +12,6 @@
   <con:expandedTreeNodes/>
   <con:overridenPropertyValuesCollection/>
   <con:project name="REST Hola USERS">/home/csaltos/soapui/REST-Hola-REST-USERS-soapui-project.xml</con:project>
+  <con:project name="CalculadoraWS">/home/csaltos/soapui/CalculadoraWS-soapui-project.xml</con:project>
   <con:collectInfoForSupport>false</con:collectInfoForSupport>
 </con:soapui-workspace>
