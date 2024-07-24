@@ -105,8 +105,8 @@ log.info("Cargo: " + context.cargo)
 }
 </con:request><con:originalUri>https://reqres.in/api/users</con:originalUri><con:assertion type="GroovyScriptAssertion" id="6a97e813-3e1f-4a12-a31c-68d1d403b7ad" name="Script Assertion"><con:configuration><scriptText>assert messageExchange.responseStatusCode == 201</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
   <con:entry key="page" value=""/>
-  <con:entry key="cargo" value="1721825046987"/>
-  <con:entry key="nombre" value="b6a4223d-5876-48f8-9c7f-da32ab213dae"/>
+  <con:entry key="cargo" value="1721825486338"/>
+  <con:entry key="nombre" value="b2b993df-d809-4f4c-97e2-c55294ebdf94"/>
 </con:parameters><con:parameterOrder><con:entry>page</con:entry><con:entry>nombre</con:entry><con:entry>cargo</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Pasar id de usuario" id="5ae994a5-2bc3-4265-9020-d167e70ac69b"><con:settings/><con:config><script>respuesta = testRunner.testCase.getTestStepByName("Crear usuario").properties.Response.value
 
 json = new groovy.json.JsonSlurper().parseText(respuesta)
@@ -122,6 +122,34 @@ testRunner.testCase.getTestStepByName("Actualizar usuario").setPropertyValue("ca
 	"job" : "${cargo}"
 }
 </con:request><con:originalUri>https://reqres.in/api/users/3</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="b4f2d36d-5bd2-4751-90fb-c32cf61030db" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
-  <con:entry key="id" value="777"/>
+  <con:entry key="id" value="366"/>
   <con:entry key="cargo" value="Nuevo cargo"/>
-</con:parameters><con:parameterOrder><con:entry>id</con:entry><con:entry>cargo</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
+</con:parameters><con:parameterOrder><con:entry>id</con:entry><con:entry>cargo</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Base de datos" id="1db7c9f6-0d78-48d0-8ead-cc028e962340"><con:settings/><con:config><script>import groovy.sql.Sql
+
+// Copiar el jar de https://repo1.maven.org/maven2/org/hsqldb/hsqldb/2.7.3/hsqldb-2.7.3.jar
+// en el directorio lib del SoapUI
+
+Map dbConnParams = [
+  url: 'jdbc:hsqldb:mem:testDB',
+  user: 'sa',
+  password: '',
+  driver: 'org.hsqldb.jdbc.JDBCDriver']
+
+  sql = Sql.newInstance(dbConnParams)
+
+  sql.execute "CREATE TABLE IF NOT EXISTS PROJECT (id integer not null, name varchar(50), url varchar(100))"
+
+  ids = sql.executeInsert """
+    INSERT INTO PROJECT (ID, NAME, URL) VALUES (1, 'tutorials', 'github.com/eugenp/tutorials')
+  """
+
+  count = sql.executeUpdate("UPDATE PROJECT SET URL = 'https://' + URL")
+
+  log.info("Count: " + count)
+
+  sql.eachRow("SELECT * FROM PROJECT") { rs ->
+    log.info(rs.name)
+    log.info(rs.URL)
+  }
+
+  sql.close()</script></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
