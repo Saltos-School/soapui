@@ -15,3 +15,7 @@ https://tutoriales.edu.lat/pub/xquery/xquery-quick-guide/xquery-guia-rapida
 ## Propiedades
 
 https://www.soapui.org/docs/scripting-and-properties/property-expansion/
+
+## Groovy
+
+https://www.soapui.org/apidocs/soapui/DefaultPackage/TestRunner.html

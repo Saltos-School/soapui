@@ -12,9 +12,9 @@
   <con:expandedTreeNodes/>
   <con:overridenPropertyValuesCollection/>
   <con:project status="CLOSED" name="REST Hola USERS">/home/csaltos/soapui/REST-Hola-REST-USERS-soapui-project.xml</con:project>
-  <con:project status="CLOSED" name="CalculadoraWS">/home/csaltos/soapui/CalculadoraWS-soapui-project.xml</con:project>
+  <con:project name="CalculadoraWS">/home/csaltos/soapui/CalculadoraWS-soapui-project.xml</con:project>
   <con:project status="CLOSED" name="CalculadoraWSLocal">/home/csaltos/soapui/CalculadoraWSLocal-soapui-project.xml</con:project>
   <con:project status="CLOSED" name="Sample SOAP Project Core">/home/csaltos/soapui/Sample-SOAP-Project-soapui-project.xml</con:project>
-  <con:project name="REST USERS">/home/csaltos/soapui/REST-USERS-soapui-project.xml</con:project>
+  <con:project status="CLOSED" name="REST USERS">/home/csaltos/soapui/REST-USERS-soapui-project.xml</con:project>
   <con:collectInfoForSupport>false</con:collectInfoForSupport>
 </con:soapui-workspace>
