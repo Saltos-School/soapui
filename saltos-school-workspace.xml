@@ -16,6 +16,7 @@
   <con:project status="CLOSED" name="CalculadoraWSLocal">/home/csaltos/soapui/CalculadoraWSLocal-soapui-project.xml</con:project>
   <con:project status="CLOSED" name="Sample SOAP Project Core">/home/csaltos/soapui/Sample-SOAP-Project-soapui-project.xml</con:project>
   <con:project status="CLOSED" name="REST USERS">/home/csaltos/soapui/REST-USERS-soapui-project.xml</con:project>
-  <con:project name="Reporte del tiempo">/home/csaltos/soapui/Reporte-del-tiempo-soapui-project.xml</con:project>
+  <con:project status="CLOSED" name="Reporte del tiempo">/home/csaltos/soapui/Reporte-del-tiempo-soapui-project.xml</con:project>
+  <con:project name="Calculadora WADL">/home/csaltos/soapui/Calculadora-WADL-soapui-project.xml</con:project>
   <con:collectInfoForSupport>false</con:collectInfoForSupport>
 </con:soapui-workspace>
